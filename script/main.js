@@ -7,8 +7,9 @@ $(document).ready(
 
 function start() {
   var audio = new Audio("./mp3/song.mp3");
-  audio.play();
   Run();
+  audio.play();
+  
   document.getElementById('title').innerText='Chúc bấy bì ngày mới vui vẻ nha, ngày càng thêm xinh ^.^'
   var countDownDate = new Date("2022  Jan 01 00:00:00").getTime();
   var sayTime = new Date("2021 Dec 31 23:59:49").getTime();
@@ -38,7 +39,7 @@ function start() {
     
     if (distance <= 0) {
       clearInterval(x);
-      document.getElementById("container").innerHTML = '<h1 style="font-size: 20px;">(^.^) <br> <span style="font-size: 20px; color: yellow;">Huỳnh Thị Ngọc Nguyên</span> </h1>';
+      document.getElementById("container").innerHTML = '<h1 style="font-size: 20px;">(^.^) <br> <span style="font-style: italic;font-weight: bold; font-size: 20px; color: #ff007f; font-family: cursive, Comic Sans MS;">😘Huỳnh Thị Ngọc Nguyên😘</span> </h1>';
 
     }
 
